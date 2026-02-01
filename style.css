@@ -1,0 +1,177 @@
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+}
+
+#titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    position: relative;     
+    width: 100%;
+    height: 100px;
+    padding: 20px 10px;
+    background-color: black;
+}
+
+.titulo p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+#foto {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+#link h2{
+    margin-top: 70px;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+#link a{
+    text-decoration: none;
+}
+
+
+#contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    padding: 40px;
+    justify-items: center;
+}
+
+.practice-card {
+    width: 200px;
+    height: 250px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.8rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    color: #333;
+    text-align: center;
+    align-items: center;
+}
+
+.practice-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+.practice-card p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+}
+
+.practice-card strong {
+    color: #555;
+}
+
+.practice-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+#contenedor-producto {
+    display: grid;
+    gap: 24px;
+    padding: 40px;
+    justify-content: center;
+    justify-items: center;
+}
+#contenedor-detalles{
+
+    display: flex;
+    gap: 24px;
+    padding: 40px;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+
+}
+#detallesproducto{
+    display: grid;
+    width: 40%;
+}
+
+#h1titulo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+
+
+#adetalle{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.btn-volver:hover {
+    background-color: #34495e;
+    transform: scale(1.05);
+}
+
+.btn-volver:active {
+    transform: scale(0.95);
+}
+
+#buscador-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#input-busqueda {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border: 2px solid #2c3e50;
+    border-radius: 25px; 
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+#input-busqueda:focus {
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); 
+}
